@@ -51,6 +51,7 @@ $rose-50: hsl(330, 100%, 98%);
 
   .title {
     font-family: 'Young Serif', serif;
+    font-size: 28px;
     font-weight: 400;
     font-style: normal;
   }
@@ -109,10 +110,38 @@ $rose-50: hsl(330, 100%, 98%);
         &:last-child {
           margin-bottom: 0;
         }
+      }
+    }
+  }
+}
 
-        &::marker {
-          color: $rose-800;
-        }
+.ingredients {
+  &_title {
+    margin-bottom: 16px;
+    color: $brown-800;
+  }
+
+  &_list {
+    margin-left: 18px;
+    list-style: none;
+
+    &_item {
+      position: relative;
+      margin: 12px 0 12px 24px;
+      text-align: start;
+
+      &::before {
+        @extend .bullet_point;
+        left: -36px;
+        background: $brown-800;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

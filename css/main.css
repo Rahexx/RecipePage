@@ -9,7 +9,7 @@
   background: hsl(0, 0%, 100%);
 }
 
-.bullet_point, .content .preparation_list_item::before {
+.bullet_point, .ingredients_list_item::before, .content .preparation_list_item::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -42,6 +42,7 @@
 }
 .content .title {
   font-family: "Young Serif", serif;
+  font-size: 28px;
   font-weight: 400;
   font-style: normal;
 }
@@ -90,6 +91,27 @@
 .content .preparation_list_item:last-child {
   margin-bottom: 0;
 }
-.content .preparation_list_item::marker {
-  color: hsl(332, 51%, 32%);
+
+.ingredients_title {
+  margin-bottom: 16px;
+  color: hsl(14, 45%, 36%);
+}
+.ingredients_list {
+  margin-left: 18px;
+  list-style: none;
+}
+.ingredients_list_item {
+  position: relative;
+  margin: 12px 0 12px 24px;
+  text-align: start;
+}
+.ingredients_list_item::before {
+  left: -36px;
+  background: hsl(14, 45%, 36%);
+}
+.ingredients_list_item:first-child {
+  margin-top: 0;
+}
+.ingredients_list_item:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
