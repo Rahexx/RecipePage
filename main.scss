@@ -8,11 +8,17 @@ $brown-800: hsl(14, 45%, 36%); //h3, list points
 $rose-800: hsl(332, 51%, 32%);
 // Preparation time background
 $rose-50: hsl(330, 100%, 98%);
+$line-height: 24px;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+p,
+li {
+  line-height: $line-height;
 }
 
 .container {
@@ -29,6 +35,15 @@ $rose-50: hsl(330, 100%, 98%);
   width: 4px;
   border-radius: 50%;
   transform: translateY(-50%);
+}
+
+.section_break {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: $stone-150;
 }
 
 .header {
@@ -96,6 +111,7 @@ $rose-50: hsl(330, 100%, 98%);
         width: 200px;
         margin: 16px 4px 12px 14px;
         text-align: start;
+        line-height: $line-height;
 
         &::before {
           @extend .bullet_point;
@@ -116,6 +132,8 @@ $rose-50: hsl(330, 100%, 98%);
 }
 
 .ingredients {
+  margin-bottom: 28px;
+
   &_title {
     margin-bottom: 16px;
     color: $brown-800;
@@ -142,6 +160,78 @@ $rose-50: hsl(330, 100%, 98%);
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.instructions {
+  padding: 24px 0;
+  position: relative;
+
+  &::before {
+    @extend .section_break;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    @extend .section_break;
+    bottom: 0;
+    left: 0;
+  }
+
+  .title {
+    margin-bottom: 16px;
+    color: $brown-800;
+  }
+
+  &_list {
+    margin: 0 6px 0 22px;
+
+    &_point {
+      font-weight: 600;
+    }
+
+    &_item {
+      margin: 12px 0;
+      padding-left: 14px;
+
+      &::marker {
+        font-weight: 600;
+        color: $brown-800;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.nutrition {
+  margin-top: 24px;
+
+  &_title {
+    color: $brown-800;
+    margin-bottom: 16px;
+  }
+
+  &_description {
+    margin-bottom: 16px;
+  }
+
+  &_list {
+    list-style: none;
+
+    &_item {
+      &_info {
+        color: $brown-800;
+        font-weight: 600;
       }
     }
   }
