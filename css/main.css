@@ -27,7 +27,7 @@ li {
           transform: translateY(-50%);
 }
 
-.section_break, .instructions::after, .instructions::before {
+.section_break, .nutrition_list_item::after, .instructions::after, .instructions::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -172,7 +172,8 @@ li {
 }
 
 .nutrition {
-  margin-top: 24px;
+  margin: 24px 0 52px 0;
+  padding-right: 4px;
 }
 .nutrition_title {
   color: hsl(14, 45%, 36%);
@@ -184,7 +185,27 @@ li {
 .nutrition_list {
   list-style: none;
 }
+.nutrition_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 0 52px 0 28px;
+  margin-bottom: 12px;
+}
+.nutrition_list_item::after {
+  bottom: -12px;
+  left: 0;
+}
+.nutrition_list_item:last-child::after {
+  display: none;
+}
 .nutrition_list_item_info {
+  width: 100px;
   color: hsl(14, 45%, 36%);
   font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
