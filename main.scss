@@ -22,7 +22,12 @@ li {
 }
 
 .container {
+  background-color: $rose-50;
+}
+
+.modal {
   background: $white;
+  max-width: 768px;
 }
 
 .bullet_point {
@@ -47,7 +52,7 @@ li {
 }
 
 .header {
-  height: 160px;
+  height: 180px;
 
   &_image {
     width: 100%;
@@ -214,7 +219,7 @@ li {
 }
 
 .nutrition {
-  margin: 24px 0 52px 0;
+  padding: 24px 0 52px 0;
   padding-right: 4px;
 
   &_title {
@@ -234,7 +239,7 @@ li {
       width: 100%;
       justify-content: space-between;
       position: relative;
-      padding: 0 52px 0 28px;
+      padding: 12px 52px 0 28px;
       margin-bottom: 12px;
 
       &::after {
@@ -253,6 +258,19 @@ li {
         width: 100px;
         color: $brown-800;
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    margin: 0 auto;
+  }
+  .nutrition {
+    &_list {
+      &_item {
+        padding: 0 200px 0 28px;
       }
     }
   }
