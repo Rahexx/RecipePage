@@ -26,8 +26,9 @@ li {
 }
 
 .modal {
+  margin: 0 auto;
+  max-width: 731px;
   background: $white;
-  max-width: 768px;
 }
 
 .bullet_point {
@@ -272,6 +273,62 @@ li {
       &_item {
         padding: 0 200px 0 28px;
       }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .modal {
+    margin: 80px auto;
+    padding: 36px;
+    border-radius: 18px;
+  }
+
+  .header {
+    height: 318px;
+
+    &_image {
+      border-radius: 8px;
+    }
+  }
+
+  .content {
+    width: 100%;
+    padding-top: 48px;
+
+    .recipe {
+      &_title {
+        font-size: 40px;
+      }
+      &_description {
+        margin: 28px 0;
+      }
+    }
+
+    .preparation {
+      margin-bottom: 28px;
+      padding: 24px 36px;
+
+      &_list {
+        margin-left: 28px;
+
+        &_item {
+          margin: 16px 4px 12px 26px;
+          width: 100%;
+
+          &::before {
+            left: -40px;
+          }
+        }
+      }
+    }
+
+    .instructions_list_item {
+      padding-left: 18px;
+    }
+
+    .nutrition_list_item {
+      padding: 0 220px 0 32px;
     }
   }
 }

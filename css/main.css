@@ -15,8 +15,9 @@ li {
 }
 
 .modal {
+  margin: 0 auto;
+  max-width: 731px;
   background: hsl(0, 0%, 100%);
-  max-width: 768px;
 }
 
 .bullet_point, .ingredients_list_item::before, .content .preparation_list_item::before {
@@ -221,5 +222,48 @@ li {
   }
   .nutrition_list_item {
     padding: 0 200px 0 28px;
+  }
+}
+@media (min-width: 992px) {
+  .modal {
+    margin: 80px auto;
+    padding: 36px;
+    border-radius: 18px;
+  }
+  .header {
+    height: 318px;
+  }
+  .header_image {
+    border-radius: 8px;
+  }
+  .content {
+    width: 100%;
+    padding-top: 48px;
+  }
+  .content .recipe_title {
+    font-size: 40px;
+  }
+  .content .recipe_description {
+    margin: 28px 0;
+  }
+  .content .preparation {
+    margin-bottom: 28px;
+    padding: 24px 36px;
+  }
+  .content .preparation_list {
+    margin-left: 28px;
+  }
+  .content .preparation_list_item {
+    margin: 16px 4px 12px 26px;
+    width: 100%;
+  }
+  .content .preparation_list_item::before {
+    left: -40px;
+  }
+  .content .instructions_list_item {
+    padding-left: 18px;
+  }
+  .content .nutrition_list_item {
+    padding: 0 220px 0 32px;
   }
 }/*# sourceMappingURL=main.css.map */
