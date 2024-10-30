@@ -23,8 +23,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://github.com/Rahexx/RecipePage)
+- Solution URL: [Solution](https://github.com/Rahexx/RecipePage)
+- Live Site URL: [Live Site](https://rahexx.github.io/RecipePage/)
 
 ## My process
 
@@ -37,7 +37,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-I used `@includes` from including styles from one class to another.
+I used `@includes` for including styles from one class to another.
 
 ### Continued development
 
@@ -45,6 +45,4 @@ In the future I want not only use JS or JS frameworks, but I want to write tests
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Rahexx](https://www.frontendmentor.io/profile/Rahexx)
