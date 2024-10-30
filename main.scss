@@ -218,8 +218,7 @@ li {
 }
 
 .nutrition {
-  padding: 24px 0 52px 0;
-  padding-right: 4px;
+  padding: 24px 4px 52px 0;
 
   &_title {
     color: $brown-800;
@@ -308,15 +307,19 @@ li {
       margin-bottom: 28px;
       padding: 24px 36px;
 
+      &_title {
+        font-size: 24px;
+      }
+
       &_list {
         margin-left: 28px;
 
         &_item {
-          margin: 16px 4px 12px 26px;
+          margin: 16px 4px 12px 16px;
           width: 100%;
 
           &::before {
-            left: -40px;
+            left: -36px;
           }
         }
       }
@@ -326,8 +329,12 @@ li {
       padding-left: 18px;
     }
 
-    .nutrition_list_item {
-      padding: 0 220px 0 32px;
+    .nutrition {
+      padding: 24px 4px 0 0;
+
+      &_list_item {
+        padding: 0 220px 0 32px;
+      }
     }
   }
 }
